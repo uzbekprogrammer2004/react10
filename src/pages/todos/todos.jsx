@@ -371,7 +371,7 @@ const Newproject = () => {
       <div className="row">
         <div className="col-4">
           <button className="btn btn-success" onClick={openModal}>
-            {isEditing ? "Edit Car" : "Add Car"}
+            {isEditing ? "Edit" : "Add"}
           </button>
         </div>
         <div className="col-8">
