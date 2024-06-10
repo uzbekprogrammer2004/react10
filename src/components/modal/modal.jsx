@@ -208,7 +208,7 @@ const UserModal = ({ open, toggle, addCar, editCar, isEditing, currentCar }) => 
     };
 
     return (
-        <Modal isOpen={open} toggle={toggle}>
+        <Modal isOpen={open} toggle={toggle}  >
             <ModalHeader toggle={toggle}>
                 <h1 className="text-center">{isEditing ? "Edit Car" : "Add Car"}</h1>
             </ModalHeader>

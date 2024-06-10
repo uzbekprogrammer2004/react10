@@ -71,10 +71,10 @@ const Sidebar = () => {
     <div className='sidebar'>
       <h1>Sidebar</h1>
       <NavLink to="/main" className="navlink" activeClassName={pathname === "/main" ? "active" : ""}>
-        Product
+      Todos
       </NavLink>
-      <NavLink to="/main/todos" className="navlink" activeClassName={pathname === "/main/todos" ? "active" : ""}>
-        Todos
+      <NavLink to="/main/product" className="navlink" activeClassName={pathname === "/main/todos" ? "active" : ""}>
+        Product
       </NavLink>
     </div>
   );

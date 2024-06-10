@@ -3,6 +3,8 @@ import axios from 'axios';
 import './product.css';
 import Stack from '@mui/material/Stack';
 import Button from '@mui/material/Button';
+import { Link, NavLink } from 'react-router-dom';
+import single from '../single-page/single.jsx';
 const Index = () => {
   const [products, setProducts] = useState([]);
 
@@ -20,20 +22,30 @@ const Index = () => {
   return (
     <div className="container">
       <h1>Mahsulotlar</h1>
-      <div className="product-list">
-        {products.map(product => (
-          <div key={product.id} className="product-card">
-            <img src={product.image} alt={product.title} className="product-image" />
-            <div className="product-info">
-              <h2 className="product-title">{product.title}</h2>
-              <div className="product_div">
-              <p className="product-price">{product.price} $ </p>
-              <Button key={product.id} variant="contained">Batafsil...</Button>
+      <nav>
+        <ul>
+          <li>
+           
+              <div className="product-list">
+                {products.map(product => (
+                  <div key={product.id} className="product-card">
+                 
+                     <Link to={`single/${product.id}`}>
+                     <img src={product.image} alt={product.title} className="product-image" /></Link>
+                    <div className="product-info">
+                      <h2 className="product-title">{product.title}</h2>
+                      <div className="product_div">
+                        <p className="product-price">{product.price} $ </p>
+                        <Button key={product.id} variant="contained">Batafsil...</Button>
+                      </div>
+                    </div>
+                  </div>
+                ))}
               </div>
-            </div>
-          </div>
-        ))}
-      </div>
+          </li>
+        </ul>
+      </nav>
+
     </div>
   );
 };

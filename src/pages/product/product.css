@@ -1,6 +1,11 @@
+*{
+  list-style: none;
+  text-decoration: none;
+}
 .container {
     max-width: 1200px;
     margin: 0 auto;
+    text-decoration: none;
   }
   .container h1 {
     text-align: center;
