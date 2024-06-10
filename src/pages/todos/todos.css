@@ -1,0 +1,25 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.cards {
+    width: 270px;
+    height: 100%;
+    border: 1px solid black;
+    border-radius: 10px;
+    margin-left: 50px;
+    display: inline-block;
+}
+.btn_add {
+    margin-top: 5px;
+    margin-left: 4px;
+    width: 260px;
+}
+.todos_1 {
+    display: flex;
+    gap: 30px;
+}
+.cards h2 {
+    text-align: center;
+}

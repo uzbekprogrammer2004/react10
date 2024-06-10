@@ -1,3 +1,4 @@
+import React from 'react'
 import { Outlet } from "react-router-dom"
 function App() {
 
@@ -9,4 +10,3 @@ function App() {
 }
 
 export default App
-import React from 'react'
