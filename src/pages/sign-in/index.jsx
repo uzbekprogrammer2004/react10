@@ -1,14 +1,16 @@
 import { useState } from "react"
 import { useNavigate } from "react-router-dom"
 import "./login.css"
-
-const Login = () => {
+const Index = () => {
   const [form, setForm] = useState ({})
   const navigate = useNavigate()
   const handleChange=(event)=>{
     const {value, name} = event.target
     setForm ({...form, [name]:value})
 
+  }
+  const moveRegister =(e) => {
+    navigate("/sign-up")
   }
   const handleSubmit=(e)=>{
     e.preventDefault();
@@ -31,9 +33,9 @@ const Login = () => {
           </div>
           <div className="card-body">
           <form id="submit" onSubmit={handleSubmit}>
-            <h1>Helllo</h1>
             <input type="text" placeholder="username" onChange={handleChange} className="form-control my-2" name="username"  />
             <input type="password" placeholder="password" onChange={handleChange} className="form-control my-2" name="password"  />
+            <p onClick={moveRegister} className="paragraph" >Register</p>
           </form>
           </div>
           <div className="card-footer">
@@ -46,4 +48,4 @@ const Login = () => {
   )
 }
 
-export default Login
+export default Index

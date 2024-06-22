@@ -17,3 +17,16 @@ const Main = () => {
 }
 
 export default Main
+
+
+// // import {  } from "../../components/modal";
+// import './main.css'
+// const Main = () => {
+//   return (
+//     <div>
+//       <ResponsiveDrawer/>
+//     </div>
+//   )
+// }
+
+// export default Main
